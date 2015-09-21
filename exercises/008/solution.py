@@ -5,4 +5,6 @@ Created on Mon Sep 21 16:12:50 2015
 @author: elsa
 """
 
-print("H\ne\nl\nl\no\n \nW\no\nr\nl\nd\n \n!")
+list=['H','e','l','l','o',' ','W','o','r','l','d',' ','!']
+for i in range(0,len(list)):
+    print(list[i]])
