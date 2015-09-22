@@ -8,4 +8,4 @@ Created on Tue Sep 22 15:05:09 2015
 import sys
 l = list(enumerate(sys.argv))
 for i in range(0, len(sys.argv)):
-    print(l[i])
+    print(l[i][0], l[i][1])
