@@ -41,9 +41,10 @@ velib = \
 
 def check_my_city(cityvar):
     zip = []
-    for d in velib:
-        if velib['city'].lower().rstrip('-') == cityvar:
-            zip.append(velib[d]['zip'])
-            return {'stations_nb': len(zip), 'zip code': zip, 'city': cityvar}
-        else:
-            return "Sorry! No station for your city has been found!"
+    for station in velib:
+        if station['city'].lower().rstrip('-') == cityvar:
+            zip.append(station['zip'])
+    if len(zip) != 0:
+        return {'stations_nb': len(zip), 'zip code': zip, 'city': cityvar}
+    else:
+        return "Sorry! No station for your city has been found!"
