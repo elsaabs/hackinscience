@@ -42,7 +42,7 @@ velib = \
 def check_my_city(cityvar):
     zip = []
     for station in velib:
-        if station['city'].lower().rstrip('-') == cityvar:
+        if station['city'].lower().rstrip('-') == cityvar.lower():
             zip.append(station['zip'])
     if len(zip) != 0:
         return {'stations_nb': len(zip), 'zip code': zip, 'city': cityvar}
