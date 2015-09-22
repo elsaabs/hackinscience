@@ -45,6 +45,6 @@ def check_my_city(cityvar):
         if station['city'].lower().rstrip('-') == cityvar.lower():
             zip.append(station['zip'])
     if len(zip) != 0:
-        return {'stations_nb': len(zip), 'zip code': zip, 'city': cityvar}
+        return {'stations_nb': len(zip), 'zip_code': zip, 'city': cityvar}
     else:
         return "Sorry! No station for your city has been found!"
