@@ -14,4 +14,7 @@ def select_student(my_class, min):
             accepted.append(student)
         else:
             refused.append(student)
-    return {'Accepted': accepted, 'Refused': refused}
+    return {'Accepted': sorted(accepted, key=lambda student: student[1],
+                               reverse=True),
+            'Refused': sorted(refused, key=lambda student: student[1],
+                              reverse=False)}
