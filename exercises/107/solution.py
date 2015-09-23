@@ -10,7 +10,7 @@ def select_student(my_class, min):
     accepted = []
     refused = []
     for student in my_class:
-        if student[1] >= min:
+        if student[1] > min:
             accepted.append(student)
         else:
             refused.append(student)
