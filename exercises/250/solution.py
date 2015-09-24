@@ -11,7 +11,3 @@ def draw_n_squares(n):
         print('+---'*n + '+')
         print('|   '*n + '|')
     print('+---'*n + '+')
-
-'''
- return '+---+\n|   |\n+---+'
- '''
