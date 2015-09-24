@@ -5,9 +5,9 @@ Created on Thu Sep 24 15:10:54 2015
 @author: elsa
 """
 
-a, b = 0, 1
+a, b = 1, 1
 fib = []
-while b < 60:
+while b < 90:
     fib.append(b)
     a, b = b, a+b
 print(', '.join(str(item) for item in fib))
