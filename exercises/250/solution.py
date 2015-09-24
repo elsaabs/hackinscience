@@ -7,7 +7,9 @@ Created on Thu Sep 24 15:31:22 2015
 
 
 def draw_n_squares(n):
+    draw = []
     for i in range(0, n):
-        print('+---'*n + '+')
-        print('|   '*n + '|')
-    print('+---'*n + '+')
+        draw.append('+---'*n + '+')
+        draw.append('|   '*n + '|')
+    draw.append('+---'*n + '+')
+    return ' \n'.join(str(item) for item in draw)
