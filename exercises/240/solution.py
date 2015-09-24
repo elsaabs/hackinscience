@@ -10,7 +10,7 @@ fib = []
 while b < 90:
     fib.append(b)
     a, b = b, a+b
-print(', '.join(str(item) for item in fib))
+print(', '.join(str(item) for item in fib) + '.')
 
 '''
 a, b = 0, 1
