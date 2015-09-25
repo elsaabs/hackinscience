@@ -19,4 +19,4 @@ def opt_euclidean(a, b):
 
 
 def np_euclidean(a, b):
-    return np.sqrt(np.sum(np.power(np.array(a) - np.array(b), 2)))
+    return np.sqrt(np.power(np.array(a) - np.array(b), 2))
