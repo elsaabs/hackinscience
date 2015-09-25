@@ -4,13 +4,13 @@ Created on Fri Sep 25 17:34:56 2015
 
 @author: elsa
 """
-import mul
+from mul import mul
 
 
 def euler(list):
     j = []
     for i in range(13, len(list)):
-        a = mul.mul(list[i - 13: i])
+        a = mul(list[i - 13: i])
         j.append(a)
     return max(j)
 
