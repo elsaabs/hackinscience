@@ -19,4 +19,12 @@ def opt_euclidean(a, b):
 
 
 def np_euclidean(a, b):
+    x = np.array(a)
+    y = np.array(b)
+    return np.linalg.norm(x - y)
+
+
+'''
+def np_euclidean(a, b):
     return np.sqrt(np.power(np.array(a) - np.array(b), 2).sum())
+'''
